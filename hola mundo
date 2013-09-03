@@ -1,0 +1,17 @@
+// Hola mundo y otras cosas.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "stdio.h"
+#include "conio.h"
+#include "Math.h"
+using namespace std;
+int main()
+{
+	
+	cout << "hola mundo";
+	getch();
+	return 0;
+}
+
