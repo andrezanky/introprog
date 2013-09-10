@@ -1,0 +1,23 @@
+// Empresa.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "conio.h"
+#include "Math.h"
+
+
+int main()
+{ float Ventas1, Ventas2, Ventas3, Total;
+  printf("ingrese el numero de ventas del producto A:");
+  scanf("%f", &Ventas1);
+  printf("ingrese el numero de ventas del producto B:");
+  scanf("%f", &Ventas2);
+  printf("ingrese el numero de ventas del producto C:");
+  scanf("%f", &Ventas3);
+  Total=(Ventas1+Ventas2+Ventas3)*4;
+  printf("El ingreso total de ventas es:%f",Total);
+   getch();
+	return 0;
+}
