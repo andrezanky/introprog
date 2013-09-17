@@ -1,0 +1,24 @@
+// Suelos e Impuestos.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+
+
+
+int main()
+{float sueldo, sueldobase, impuesto;
+printf("Ingrese el sueldo:");
+ scanf("%f",& sueldo);
+ sueldobase=1400;
+ if(sueldo>2*sueldobase)
+	 {impuesto=sueldo*0.13;
+     }
+ else
+    {impuesto=0;
+    }
+ printf("Los impuestos son:%f", impuesto);
+ getch();
+	return 0;
+}
