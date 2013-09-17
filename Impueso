@@ -8,17 +8,22 @@
 
 
 int main()
-{float sueldo, sueldobase, impuesto;
-printf("Ingrese el sueldo:");
+{float sueldo, sueldobase, impuesto, PagoAFP, SueldoLiquido;
+printf("\nIngrese el sueldo:");
  scanf("%f",& sueldo);
  sueldobase=1400;
  if(sueldo>2*sueldobase)
-	 {impuesto=sueldo*0.13;
+{impuesto=sueldo*0.13;
+ PagoAFP=sueldo*0.12;
+ SueldoLiquido=sueldo-(impuesto+PagoAFP);
+ printf("\nLos impuestos son:%f", impuesto);
+ printf("\nLos Pagos a la AFP son:%f", PagoAFP);
+ printf("\nTu sueldo quedo en casi la mitad jajaja mentira quedo en:%f", SueldoLiquido);
      }
  else
     {impuesto=0;
+     printf("\nNo paga impuestos.");
     }
- printf("Los impuestos son:%f", impuesto);
  getch();
-	return 0;
+  return 0;
 }
